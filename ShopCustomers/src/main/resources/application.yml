@@ -1,0 +1,12 @@
+
+spring:
+  jpa:
+    hibernate:      naming:        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  datasource:
+    url: jdbc:mysql://bootcamp.ckyzngvmlkpk.sa-east-1.rds.amazonaws.com:3306/celula1
+    username: celula1
+    password: Celula01!!!
+    driver-class-name: com.mysql.jdbc.Driver
+  
+
+    

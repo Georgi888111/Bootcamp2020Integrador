@@ -1,0 +1,316 @@
+{
+	"info": {
+		"_postman_id": "d976743a-49d2-4147-bb33-7af6da47d100",
+		"name": "ShopProduct",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "http://localhost:9099/products/v1/product",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9099/products/v1/product",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9099",
+							"path": [
+								"products",
+								"v1",
+								"product"
+							]
+						},
+						"description": "Get de todos los productos"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9099/products/v1/product",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9099/products/v1/product/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9099",
+							"path": [
+								"products",
+								"v1",
+								"product",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9099/products/v1/product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 18,\r\n    \"name\": \"Prueba de POST\",\r\n    \"description\": \"Test\",\r\n    \"price\": 99.99,\r\n    \"stock\": 1,\r\n    \"activoProducto\": true,\r\n    \"category\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9099/products/v1/product",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9099",
+							"path": [
+								"products",
+								"v1",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9099/products/v1/product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 18,\r\n    \"name\": \"Prueba PUT\",\r\n    \"description\": \"Test PUT\",\r\n    \"price\": 100,\r\n    \"stock\": 1,\r\n    \"activoProducto\": true,\r\n    \"category\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9099/products/v1/product",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9099",
+							"path": [
+								"products",
+								"v1",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9099/products/v1/product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9099/products/v1/product/18",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9099",
+							"path": [
+								"products",
+								"v1",
+								"product",
+								"18"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Catalog",
+			"item": [
+				{
+					"name": "http://localhost:9099/products/v1/catalog",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9099/products/v1/catalog",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9099",
+							"path": [
+								"products",
+								"v1",
+								"catalog"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9099/products/v1/catalog/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9099/products/v1/catalog/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9099",
+							"path": [
+								"products",
+								"v1",
+								"catalog",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9099/products/v1/catalog",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"id\": 7,\r\n\"descripcion\": \"probando POST\",\r\n\"name\": \"POST\",\r\n\"activoCategory\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9099/products/v1/catalog",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9099",
+							"path": [
+								"products",
+								"v1",
+								"catalog"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9099/products/v1/catalog/7",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 7,\r\n    \"descripcion\": \"Probando PATCH\",\r\n    \"name\": \"POST\",\r\n    \"activoCategory\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9099/products/v1/catalog/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9099",
+							"path": [
+								"products",
+								"v1",
+								"catalog",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9099/products/v1/catalog/7",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9099/products/v1/catalog/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9099",
+							"path": [
+								"products",
+								"v1",
+								"catalog",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,11 @@
+spring:
+  application:
+     name: microservice-gateway
+zuul:
+  routes:
+    ShopProduct-Category:
+      path: /catalog/**
+      url: http://localhost:9099/products/v1/catalog
+    ShopProduct-Product:
+      path: /product/**
+      url: http://localhost:9099/products/v1/product

@@ -1,0 +1,4 @@
+url=jdbc:mysql://bootcamp.ckyzngvmlkpk.sa-east-1.rds.amazonaws.com:3306/celula1
+username=celula1
+password=Celula01!!!
+defaultZone= ${EUREKA_URI:http://localhost:8761/eureka}

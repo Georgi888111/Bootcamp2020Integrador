@@ -1,0 +1,16 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/GloballogicServiceAndIntegration/celula1-alpha-centauri.git
+          default-label: feature/CAC-0068/Config-server
+          search-paths:
+          - Config
+          #Agrega tus credenciales de github
+          username: XXXXXx
+          password: XXXXXx
